@@ -1,5 +1,5 @@
 # About
-<b>Thamardi</a> is a Myanmar units conversion app. This app is created as a NativeScript exercise project. Even though NativeScript provide multi-platform support, this app is designed for Android. It use standard Unicode as primary encoding for Burmese contents. If you use Zawgyi font, this app may or may not work well.
+<b>Thamardi</b> is a Myanmar units conversion app. This app is created as a NativeScript exercise project. Even though NativeScript provide multi-platform support, this app is designed for Android. It use standard Unicode as primary encoding for Burmese contents. If you use Zawgyi font, this app may or may not work well.
 
 ## Instruction
 You will need NativeScript installed on your computer to run or debug the app. Please follow this instruction to install NativeScript.
