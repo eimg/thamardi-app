@@ -1,0 +1,52 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+	xmlns:drawer="nativescript-telerik-ui/sidedrawer"
+	xmlns:MyComponents="./views/shared"
+	xmlns:x="nativescript-statusbar"
+	xmlns:FAB="nativescript-floatingactionbutton"
+	navigatingTo="reloadMain">
+
+	<x:StatusBar ios:barStyle="light" android:barStyle="#FFC107" />
+
+	<Page.actionBar>
+		<!-- Custom component from ../shared -->
+	    <MyComponents:actionBar />
+	</Page.actionBar>
+
+	<drawer:RadSideDrawer id="sideDrawer" drawerLocation="Left" drawerClosed="navigateTo">
+		<drawer:RadSideDrawer.mainContent>
+			<GridLayout>
+				<StackLayout>
+					<TabView>
+						<TabView.items>
+							<TabViewItem title="{{ lang['အချင်အတွယ်'] + '' }}">
+								<TabViewItem.view>
+									<WebView src="~/html/volume.html" loadStarted="disableZoom" />
+								</TabViewItem.view>
+							</TabViewItem>
+							<TabViewItem title="{{ lang['ရှေးသုံးချင်တွယ်ပုံ'] + '' }}">
+								<TabViewItem.view>
+									<WebView src="~/html/volume-measure.html" loadStarted="disableZoom" />
+								</TabViewItem.view>
+							</TabViewItem>
+						</TabView.items>
+					</TabView>
+				</StackLayout>
+
+				<FAB:fab tap="calcVolumeModal"
+                     row="1"
+                     icon="~/imgs/calc.png"
+                     rippleColor="#f1f1f1"
+                     class="fab-button" />
+
+				<ActivityIndicator busy="false" id="spinner" />
+			</GridLayout>
+		</drawer:RadSideDrawer.mainContent>
+		<drawer:RadSideDrawer.drawerContent>
+			<GridLayout class="drawer-content">
+				<!-- Custom component from ../shared -->
+				<MyComponents:drawer />
+			</GridLayout>
+		</drawer:RadSideDrawer.drawerContent>
+	</drawer:RadSideDrawer>
+
+</Page>

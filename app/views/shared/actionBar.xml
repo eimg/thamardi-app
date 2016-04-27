@@ -1,0 +1,12 @@
+<ActionBar class="action-bar" xmlns="http://schemas.nativescript.org/tns.xsd">
+	<ActionBar.actionItems>
+		<ActionItem text="Unicode" android.position="popup" tap="switchToUnicode"/>
+		<ActionItem text="Zawgyi" android.position="popup" tap="switchToZawgyi"/>
+	</ActionBar.actionItems>
+	<ActionBar.titleView>
+		<StackLayout orientation="horizontal">
+			<Image src="~/imgs/menu.png" tap="toggleDrawer" class="icon-button" />
+			<Label text="သမာဓိ" class="app-title"/>
+		</StackLayout>
+	</ActionBar.titleView>
+</ActionBar>

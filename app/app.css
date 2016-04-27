@@ -1,0 +1,50 @@
+page {
+	font-family: 'noto sans myanmar';
+}
+
+.icon-button {
+	width: 24;
+	height: 24;
+}
+
+.app-title {
+	font-weight: bold;
+	font-size: 18;
+	margin-left: 20;
+}
+
+.action-bar {
+	background-color: #FFC107;
+}
+
+.drawer-content {
+	padding-top: 20;
+	padding-left: 20;
+	background-color: #FFF8E1;
+}
+
+.drawer-menu-item {
+	font-size: 16;
+	padding: 10 25;
+	margin: 10 0;
+	width: 90%;
+}
+
+.drawer-menu-splitter {
+	background-color: #FFECB3;
+	margin-right: 15;
+	height: 1px;
+}
+
+.fab-button {
+    height: 80;
+    margin: 20;
+    background-color: #FFB300;
+    horizontal-align: right;
+    vertical-align: bottom;
+}
+
+.calc-container {
+	padding: 20;
+	width: 90%;
+}

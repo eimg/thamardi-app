@@ -1,0 +1,73 @@
+.about {
+	padding: 10px;
+}
+
+h1 {
+	margin: 0 0 10px 0;
+	padding: 0;
+	font-size: 18px;
+}
+
+h2 {
+	margin: 20px 0 10px 0;
+	padding: 0;
+	font-size: 18px;
+}
+
+p {
+	font-size: 13px;
+	line-height: 1.5em;
+}
+
+table {
+	margin: 0;
+	border-spacing: 0;
+	font-family: 'noto sans myanmar', myanmar3, padauk, tharlon;
+	font-size: 16px;
+	color: #555;
+}
+th {
+	border-bottom: 2px solid #ddd;
+	padding: 15px 0 15px 15px;
+	text-align: left;
+}
+td {
+	border-bottom: 1px solid #ddd;
+	padding: 15px 0 15px 15px;
+}
+
+ul {
+	font-family: 'noto sans myanmar', myanmar3, padauk, tharlon;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	color: #555;
+}
+
+li {
+	border-bottom: 1px solid #ddd;
+	padding: 15px 0 15px 15px;
+}
+
+li b {
+	display: inline-block;
+	width: 40%;
+	text-align: right;
+}
+
+li span {
+	display: inline-block;
+	width: 10%;
+	text-align: center;
+}
+
+li.splitter {
+	background: #ddd;
+}
+
+small {
+	display: block;
+	color: #999;
+	font-size: 11px;
+}

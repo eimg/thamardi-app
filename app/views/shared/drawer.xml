@@ -1,0 +1,25 @@
+<StackLayout xmlns="http://schemas.nativescript.org/tns.xsd">
+	<StackLayout orientation="horizontal">
+		<Image src="~/imgs/length.png" class="icon-button" />
+		<Label text="{{ lang['အတိုင်းအတာ'] + '' }}" class="drawer-menu-item" tap="showLength" />
+	</StackLayout>
+	<StackLayout orientation="horizontal">
+		<Image src="~/imgs/weight.png" class="icon-button" />
+		<Label text="{{ lang['အလေးချိန်'] + '' }}" class="drawer-menu-item" tap="showMass" />
+	</StackLayout>
+	<StackLayout orientation="horizontal">
+		<Image src="~/imgs/amount.png" class="icon-button" />
+		<Label text="{{ lang['အချင်အတွယ်'] + '' }}" class="drawer-menu-item" tap="showVolume" />
+	</StackLayout>
+	<StackLayout orientation="horizontal">
+		<Image src="~/imgs/time.png" class="icon-button" />
+		<Label text="{{ lang['အချိန်နာရီ'] + '' }}" class="drawer-menu-item" tap="showTime" />
+	</StackLayout>
+
+	<Label text="" class="drawer-menu-splitter" />
+
+	<StackLayout orientation="horizontal">
+		<Image src="~/imgs/about.png" class="icon-button" />
+		<Label text="{{ lang['မှတ်ချက်'] + '' }}" class="drawer-menu-item" tap="showAbout" />
+	</StackLayout>
+</StackLayout>

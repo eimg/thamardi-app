@@ -1,0 +1,29 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+	xmlns:drawer="nativescript-telerik-ui/sidedrawer"
+	xmlns:MyComponents="./views/shared"
+	xmlns:x="nativescript-statusbar"
+	navigatingTo="reloadMain">
+
+	<x:StatusBar ios:barStyle="light" android:barStyle="#FFC107" />
+
+	<Page.actionBar>
+	    <MyComponents:actionBar />
+	</Page.actionBar>
+
+	<drawer:RadSideDrawer id="sideDrawer" drawerLocation="Left" drawerClosed="navigateTo">
+		<drawer:RadSideDrawer.mainContent>
+			<GridLayout>
+				<StackLayout>
+					<WebView src="~/html/about.html" loadStarted="disableZoom" />
+				</StackLayout>
+
+				<ActivityIndicator busy="false" id="spinner" />
+			</GridLayout>
+		</drawer:RadSideDrawer.mainContent>
+		<drawer:RadSideDrawer.drawerContent>
+			<GridLayout class="drawer-content">
+				<MyComponents:drawer />
+			</GridLayout>
+		</drawer:RadSideDrawer.drawerContent>
+	</drawer:RadSideDrawer>
+</Page>

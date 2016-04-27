@@ -1,0 +1,20 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+	xmlns:dd="nativescript-drop-down"
+	showingModally="reloadMain">
+
+	<StackLayout class="calc-container">
+		<StackLayout marginBottom="20">
+			<Label text="{{ lang['အတိုင်းအတာ'] + '' }}" fontWeight="bold" fontSize="18" />
+		</StackLayout>
+		<StackLayout>
+			<TextField text="{{ inputValue }}" keyboardType="number" keyboardType="number" id="inputValue" fontSize="18" propertyChange="convertUnit" />
+			<dd:DropDown items="{{ inputUnitSet }}" marginLeft="5" id="inputUnit"
+				propertyChange="convertUnit" selectedIndex="{{ inputUnit }}" />
+		</StackLayout>
+		<StackLayout marginTop="40" marginBottom="10">
+			<Label text="{{ resultValue }}" id="resultValue" fontSize="30" />
+			<dd:DropDown items="{{ resultUnitSet }}" marginLeft="5" id="resultUnit"
+				propertyChange="convertUnit" selectedIndex="{{ resultUnit }}" />
+		</StackLayout>
+	</StackLayout>
+</Page>

@@ -1,0 +1,13 @@
+{
+	"nativescript": {
+		"id": "com.eimaung.thamardi"
+	},
+	"dependencies": {
+		"convert-units": "^0.7.0",
+		"nativescript-drop-down": "^1.2.4",
+		"nativescript-floatingactionbutton": "^2.2.1",
+		"nativescript-statusbar": "^1.0.0",
+		"nativescript-telerik-ui": "^1.0.1",
+		"tns-core-modules": "1.7.1"
+	}
+}
